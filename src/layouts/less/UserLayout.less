@@ -1,0 +1,89 @@
+@import "~antd/lib/style/themes/default.less";
+
+.matrix{position: absolute;z-index: -1;}
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    .ring{
+        position: absolute;
+        z-index: 0;
+        top: 50%;
+        left: 50%;
+        margin-left: -279px;
+        margin-top: -273px;
+        padding-top:10px;
+        height: 568px;
+        width: 561px;
+        overflow: hidden;
+        img{
+            position: absolute;
+            &:first-child{
+                -webkit-transition-property: -webkit-transform;
+                -webkit-transition-duration: 1s;
+                -moz-transition-property: -moz-transform;
+                -moz-transition-duration: 1s;
+                -webkit-animation: rotate1 10s linear infinite;
+                -moz-animation: rotate1 10s linear infinite;
+                -o-animation: rotate1 10s linear infinite;
+                animation: rotate1 10s linear infinite;
+                & + img{
+                    margin-top:24px;
+                    margin-left: 32px;
+                    -webkit-transition-property: -webkit-transform;
+                    -webkit-transition-duration: 1s;
+                    -moz-transition-property: -moz-transform;
+                    -moz-transition-duration: 1s;
+                    -webkit-animation: rotate2 10s linear infinite;
+                    -moz-animation: rotate2 10s linear infinite;
+                    -o-animation: rotate2 10s linear infinite;
+                    animation: rotate2 10s linear infinite;
+                }
+            }
+        }
+        @-webkit-keyframes rotate1{from{-webkit-transform: rotate(0deg)}
+            to{-webkit-transform: rotate(360deg)}
+        }
+        @-moz-keyframes rotate1{from{-moz-transform: rotate(0deg)}
+            to{-moz-transform: rotate(359deg)}
+        }
+        @-o-keyframes rotate1{from{-o-transform: rotate(0deg)}
+            to{-o-transform: rotate(359deg)}
+        }
+        @keyframes rotate1{from{transform: rotate(0deg)}
+            to{transform: rotate(359deg)}
+        }
+        @-webkit-keyframes rotate2{from{-webkit-transform: rotate(360deg)}
+            to{-webkit-transform: rotate(0deg)}
+        }
+        @-moz-keyframes rotate2{from{-moz-transform: rotate(359deg)}
+            to{-moz-transform: rotate(0deg)}
+        }
+        @-o-keyframes rotate2{from{-o-transform: rotate(359deg)}
+            to{-o-transform: rotate(0deg)}
+        }
+        @keyframes rotate2{from{transform: rotate(359deg)}
+            to{transform: rotate(0deg)}
+        }
+    }
+}
+
+.content {
+  padding: 32px 0;
+  flex: 1;
+  z-index: 2;
+}
+
+@media (min-width: @screen-md-min) {
+  .container {
+    background-repeat: no-repeat;
+    background-position: center 110px;
+    background-size: 100%;
+  }
+
+  .content {
+    padding: 112px 0 24px 0;
+  }
+}
+
+

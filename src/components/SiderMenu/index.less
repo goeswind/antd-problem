@@ -1,0 +1,132 @@
+@import "~antd/lib/style/themes/default.less";
+@ease-in-out-circ: cubic-bezier(.78, .14, .15, .86);
+.smT{background-color: red !important;}
+.logo {
+  height: 52px;
+  position: relative;
+  line-height: 52px;
+  // padding-left: (@menu-collapsed-width - 32px) / 2;
+  transition: all .3s;
+  border-bottom: 1px solid #5a7582;
+  // background: #002140;
+  // overflow: hidden;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: 8px;
+  }
+  span {
+    // color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    margin: 0 0 0 8px;
+    font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color:#fff;
+  }
+}
+
+.sider {
+  min-height: 100vh;
+  // box-shadow: 2px 0 6px rgba(0, 21, 41, .35);
+  position: relative;
+  z-index: 10;
+  
+}
+:global {
+  //修改sider背景色
+  // .ant-layout-sider{
+  //   background: #445963;
+  // }
+  // .ant-menu-dark,
+  // .ant-menu .ant-menu-dark .ant-menu-item-selected, 
+  // .ant-menu-submenu-popup .ant-menu-dark .ant-menu-item-selected,
+  // .ant-menu-item,
+  // .ant-menu-dark .ant-menu-inline .ant-menu-sub{
+  //    background: #ebeef0;
+     
+  // };
+  // //menu一级菜单样式
+  // .ant-menu-dark .ant-menu-item > a{
+  //   color:#999999;
+  // }
+  // .ant-menu-dark .ant-menu-item > a:hover{
+  //    color:#333333;
+  // }
+  // // menu一级菜单具有子集下(二级菜单)的hover样式
+  // .ant-menu-dark .ant-menu-submenu-title:hover{
+  //     color:#666666;
+  // }
+  // .ant-menu-dark .ant-menu-inline .ant-menu-sub{
+  //   background: #ebeef0;
+  // }
+  //修改一级目录下的阴影
+  .ant-menu-dark .ant-menu-inline.ant-menu-sub{
+    background: #ebeef0;
+    box-shadow:none;
+  }
+  .BasicLayout-hcf__menuLeftAdd___11xil{
+    float: right;
+    margin-right: 10px;
+    margin-top: 6px;
+  }
+  //二级目录的样式
+  .ant-menu-submenu > .ant-menu {
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  // //选择后的样式
+  .ant-menu.ant-menu-dark .ant-menu-item-selected, 
+  .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected{
+    // background: #ebeef0;
+    // color:#445963;
+    font-weight: bold;
+  }
+  //覆盖侧边栏不知哪里出来的右边框1px
+  .ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+    border-right: none !important;
+  }
+  // .ant-menu-dark, .ant-menu-dark .ant-menu-sub{
+  //   background: #ebeef0;
+  // }
+  // .ant-menu-dark .ant-menu-item:hover, 
+  // .ant-menu-dark .ant-menu-item-active, 
+  // .ant-menu-dark .ant-menu-submenu-active, 
+  // .ant-menu-dark .ant-menu-submenu-open, 
+  // .ant-menu-dark .ant-menu-submenu-selected, 
+  // .ant-menu-dark .ant-menu-submenu-title:hover{
+  //   color:#666666
+  // }
+  //子级菜单缩进
+  .ant-menu-sub li{
+    padding-left: 24px !important;
+  }
+  //菜单展开小箭头
+  .ant-menu-submenu-arrow{
+    // display:none;
+    color:#fff
+  }
+}
+.menuTitleLogo{
+  position: absolute;
+  right:0;
+}
+.icon {
+  width: 14px;
+  margin-right: 10px;
+}
+
+:global {
+  .drawer .drawer-content {
+    background: #445963;
+  }
+}
+
+
+
+
+//WorkspaceSiderMenus css
+

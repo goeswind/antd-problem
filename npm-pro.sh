@@ -1,0 +1,1 @@
+nohup npm run build:pro 2>&1 >> antd.log &

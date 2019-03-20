@@ -1,0 +1,1 @@
+nohup npm run start:test 2>&1 >> antd.log &

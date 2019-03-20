@@ -1,0 +1,102 @@
+// .siderFixed{
+//     position: fixed;
+//     z-index:10000;
+// }
+:global {
+    .ant-layout-sider-children{
+        position: fixed;
+        z-index: 100000;
+    }
+    .ant-layout, .ant-layout * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      /*  vertical-align: middle;*/
+    }
+}
+.siderMain{
+    box-shadow: 2px 0 3px rgba(0,0,0,0.4);
+}
+.menuitem{
+    padding:10px 0;
+    cursor: pointer;
+}
+.menuitemHide{
+    padding:10px 0;
+}
+.menuActive{
+    background: #ebeef0;
+    padding:10px 0;
+    cursor: pointer;
+    .menufront{
+        color: #445963;
+        font-weight: bold;
+    }
+}
+.menuLeftLogo , .menuLeftAdd{
+    padding:0 15px;
+}
+.menufront{
+    color:#fff;
+    line-height: 20px; 
+}
+.HeadMain{
+    color:#fff;
+    width: 188px;
+    height: 48px;
+    line-height: 48px; 
+    .Headimg{
+        width: 30px;
+        height: 30px;
+        border-radius:50%;
+        margin:0 6px;
+        cursor: pointer;
+    }
+    position: relative;
+}
+.trigger{
+    width: 100%;
+    height: 20px;
+    background: #5a7582;
+    text-align: center; 
+    line-height: 20px;
+    .triggerimg{
+        line-height: 20px;
+        cursor: pointer;
+        margin-top: -3px;
+    }
+}
+.triggerHide{
+    width: 100%;
+    height: 20px;
+    background: #5a7582;
+    text-align: center;
+    line-height: 20px;
+    .triggerimg{
+        line-height: 20px;
+        cursor: pointer;
+    }
+}
+.menuMain{
+    width:100%;
+    height:100%;
+    position: relative;
+    .secMenuMain{
+        width: 146px;
+        // width: 130px;
+        height:100%;
+        background:#ebeef0;
+        position: absolute;
+        top:0;
+        left:42px;
+        // left: 110px;
+
+        // color:black;
+    }
+}
+.menuMainHide{
+    width:100%;
+    height:100%;
+}
+.siderWarp{
+    width:42px;
+}
